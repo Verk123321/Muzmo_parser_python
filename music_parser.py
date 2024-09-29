@@ -136,11 +136,16 @@ def get_downloadlink(link):
    link=f"https://rmf.muzmo.cc{href}"  
    return link
     
-get_music("Бивни          чёрных        скал      ") 
-link = links[0]
-print(get_downloadlink(link))
-#wget.download(get_downloadlink(link))
+get_music("Ваш запрос") 
 
+#используется для скачивания песни с помощью  wget
+
+"""link = links[0]
+print(get_downloadlink(link))
+wget.download(get_downloadlink(link))"""
+
+
+#используется для вывода результатов поика
 
 num = 0   
 for i in songs:  
