@@ -1,7 +1,7 @@
 import requests
 import wget
 from bs4 import BeautifulSoup as bs
-import pprint
+
 
 #1 поколение парсера
 
