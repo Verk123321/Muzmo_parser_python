@@ -96,7 +96,7 @@ def get_music(query):
    try:
       data = bs(r.text, "html.parser")
       name = data.findAll('a', class_="block")            
-      href=[i['href']  for i in name if i['href'].startswith('/get_new?')]  
+      href=[i['href']  for i in name if i['href'].startswith('/info?id')]  
       for item in name:       
       	filter= ("".join(" ".join(item.text.split()).split(", 320Kb/s")))
       	if filter.endswith(')'):      	   
